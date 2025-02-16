@@ -1,32 +1,53 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
+  const [showMore, setShowMore] = useState(false); // To track showMore state
+
+  // All project cards data
+  const projectData = [
+    { src: "/NextWebsite.png", title: "Modern Next.js Portfolio", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/CardImage.png", title: "Interactive Website Cards", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/SpaceWebsite.png", title: "Space Themed Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/logo_prev_ui.png", title: "New Project 1", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/docker.png", title: "New Project 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/figma.png", title: "New Project 3", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/html.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/go.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/fb.webp", title: "New Project 6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+  ];
+
+  // Function to handle button click
+  const handleToggle = () => {
+    setShowMore(!showMore);
+  };
+
   return (
-    <div
-      className="flex flex-col items-center justify-center py-20"
-      id="projects"
-    >
+    <div className="flex flex-col items-center justify-center py-20" id="projects">
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
+
+      {/* Project Cards */}
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+        {projectData.slice(0, showMore ? projectData.length : 3).map((project, index) => (
+          <ProjectCard
+            key={index}
+            src={project.src}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
+
+      {/* Toggle Button */}
+      <button
+        onClick={handleToggle} // Handle toggling between showing more or less
+        className="mt-5 py-2 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg"
+      >
+        {showMore ? "Show Less" : "Show More"} {/* Toggle between 'Show More' / 'Show Less' */}
+      </button>
     </div>
   );
 };
