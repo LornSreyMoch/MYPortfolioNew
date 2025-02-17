@@ -53,8 +53,18 @@ const TextChange = () => {
   );
 };
 
-
 const HeroContent = () => {
+  const [isDownloaded, setIsDownloaded] = useState(false);
+
+  const handleDownloadClick = () => {
+    setIsDownloaded(true);
+
+    // Reset the button color after 3 seconds (simulating download completion)
+    setTimeout(() => {
+      setIsDownloaded(false);
+    }, 3000); // 3 seconds
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -67,9 +77,7 @@ const HeroContent = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
-          </h1>
+          <h1 className="Welcome-text text-[13px]">Fullstack Developer Portfolio</h1>
         </motion.div>
 
         <motion.div
@@ -90,14 +98,27 @@ const HeroContent = () => {
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
 
-        <Link
-  href="/cv.png"
-  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-600 hover:bg-slate-700 text-white mt-3"
->
-  <span className="block bg-[#121212] hover:bg-gray-800 rounded-full px-5 py-2">
-    Download CV
-  </span>
-</Link>
+        <div className="flex justify-start gap-4 w-full mt-3">
+          <Link
+            href="/"
+            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white"
+          >
+            <span className="block rounded-full px-6 py-2 font-medium shadow-md">
+              Contact
+            </span>
+          </Link>
+
+          <a
+            href="/LORN Sreymoch C3-WMAD CV 2025.Docx.pdf"
+            download
+            onClick={handleDownloadClick} // Trigger the color change
+            className={`text-white py-3 px-8 rounded-full text-base md:text-lg font-semibold transform hover:scale-110 hover:shadow-xl transition-all duration-300 ease-in-out shadow-md 
+      ${isDownloaded ? 'bg-gradient-to-r from-green-600 to-green-400' : 'bg-gradient-to-r from-blue-500 to-purple-600'} hover:bg-gradient-to-l
+      hover:from-purple-500 hover:to-blue-600`}
+          >
+            {isDownloaded ? 'Downloading...' : 'Download CV'}
+          </a>
+        </div>
 
       </div>
 
@@ -115,8 +136,5 @@ const HeroContent = () => {
     </motion.div>
   );
 };
-
-
-
 
 export default HeroContent;
