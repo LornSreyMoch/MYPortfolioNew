@@ -104,12 +104,7 @@ const HeroContent = () => {
       <motion.div
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
-      >console.log("TextChange component mounted");
-console.log("Current text:", currentText);
-console.log("Is adding:", isAdding);
-console.log("Index:", index);
-console.log("Char index:", charIndex);
-console.log("Texts:", texts);
+      >
         <Image
           src="/mainIconsdark.svg"
           alt="work icons"
