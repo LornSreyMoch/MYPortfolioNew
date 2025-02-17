@@ -99,14 +99,14 @@ const HeroContent = () => {
         </motion.p>
 
         <div className="flex justify-start gap-4 w-full mt-3">
-          <Link
-            href="/"
-            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white"
-          >
-            <span className="block rounded-full px-6 py-2 font-medium shadow-md">
-              Contact
-            </span>
-          </Link>
+        <Link
+         href="/"
+         className="flex items-center justify-center px-6 py-2 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white shadow-md font-medium"
+        >
+         Contact
+       </Link>
+
+
 
           <a
             href="/LORN Sreymoch C3-WMAD CV 2025.Docx.pdf"

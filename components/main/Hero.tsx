@@ -1,6 +1,6 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
-import NewSection from "../sub/NewSection";
+import NewSection from "../sub/Informa";
 
 const Hero = () => {
   return (
