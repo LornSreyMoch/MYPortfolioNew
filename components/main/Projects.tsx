@@ -3,41 +3,50 @@ import React, { useState } from "react";
 import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(false); // Toggle state
+  const [showMore, setShowMore] = useState(false); // To track showMore state
 
-  // Project data
+  // All project cards data
   const projectData = [
-    { src: "/bikay.png", title: "Short URL", description: "A powerful link shortener built with Express & PostgreSQL." },
-    { src: "/pos.png", title: "Point of Sale", description: "A POS system for small businesses with real-time inventory tracking." },
-    { src: "/portfo.png", title: "Portfolio Website", description: "A sleek and modern portfolio website using Next.js & Tailwind CSS." },
-    { src: "/buynow.png", title: "E-Commerce Platform", description: "An online shop built with React and Strapi CMS." },
-    { src: "/culator.png", title: "HR Management System", description: "A web app for managing employee records & payroll." },
-    { src: "/portfo.png", title: "Task Manager", description: "A task-tracking app with authentication and real-time updates." },
-    { src: "/portfo.png", title: "Learning Platform", description: "An LMS with video courses and interactive quizzes." },
-    { src: "/portfo.png", title: "Chat Application", description: "A real-time chat app using WebSockets & MongoDB." },
-    { src: "/portfo.webp", title: "Finance Tracker", description: "A budget management tool for tracking expenses and income." },
+    { src: "/bikay.png", title: "Short URL", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "New Project 1", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "New Project 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "New Project 3", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { src: "/portfo.webp", title: "New Project 6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
   ];
 
+  // Function to handle button click
+  const handleToggle = () => {
+    setShowMore(!showMore);
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center py-20 px-5" id="projects">
-      {/* Title */}
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-10">
+    <div className="flex flex-col items-center justify-center py-20" id="projects">
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
 
       {/* Project Cards */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
-        {projectData.slice(0, showMore ? 9 : 3).map((project, index) => (
-          <ProjectCard key={index} src={project.src} title={project.title} description={project.description} />
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        {projectData.slice(0, showMore ? projectData.length : 3).map((project, index) => (
+          <ProjectCard
+            key={index}
+            src={project.src}
+            title={project.title}
+            description={project.description}
+          />
         ))}
       </div>
 
       {/* Toggle Button */}
       <button
-        onClick={() => setShowMore(!showMore)}
-        className="mt-8 py-2 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg hover:scale-105 transition-transform"
+        onClick={handleToggle} // Handle toggling between showing more or less
+        className="mt-5 py-2 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg"
       >
-        {showMore ? "Show Less" : "Show More"}
+        {showMore ? "Show Less" : "Show More"} {/* Toggle between 'Show More' / 'Show Less' */}
       </button>
     </div>
   );
