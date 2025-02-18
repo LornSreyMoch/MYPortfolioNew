@@ -1,6 +1,6 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
-import NewSection from "../sub/Informa";
+import Informa from "../sub/Informa";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
         <source src="/blackhole.webm" type="video/webm" />
       </video> */}
       <HeroContent />
-      <NewSection />
+      <Informa />
     </div>
   );
 };
