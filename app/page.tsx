@@ -8,12 +8,19 @@ export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Projects />
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about-me">
+          <AboutMe />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
       </div>
     </main>
   );
 }
-

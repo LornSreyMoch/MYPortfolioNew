@@ -11,11 +11,11 @@ const Projects = () => {
     { id: 2, src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     { id: 4, src: "/buynow.png", title: "Buy Now", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { id: 5, src: "/portfo.png", title: "New Project 2", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { id: 5, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     { id: 6, src: "/portfo.png", title: "New Project 3", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     { id: 7, src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     { id: 8, src: "/portfo.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { id: 9, src: "/portfo.webp", title: "New Project 6", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+    { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
   ];
 
   const handleToggle = () => setShowMore(prevState => !prevState);
@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-3 h-full py-20 z-[50] relative" id="projects"> {/* Increased z-index to 50 */}
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-blue bg-opacity-50"></div>
 
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 relative z-10">
         My Projects
