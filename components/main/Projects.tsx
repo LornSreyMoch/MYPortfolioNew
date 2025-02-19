@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "../sub/ProjectCard";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [showMore, setShowMore] = useState(false);
@@ -11,29 +12,32 @@ const Projects = () => {
     { id: 2, src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
     { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://http://localhost:3000" },
     { id: 4, src: "/buynow.png", title: "Buy Now", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
-    { id: 5, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." , demoLink: "https://online-calculator-indol.vercel.app/"},
-    { id: 6, src: "/weather.png", title: "Weather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." , demoLink: "https://pp-weather-azure.vercel.app/"},
-    { id: 7, src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." , demoLink: "https://shorturl.demo"},
-    { id: 8, src: "/portfo.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." , demoLink: "https://shorturl.demo"},
-    { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." , demoLink: "https://shorturl.demo"},
+    { id: 5, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://online-calculator-indol.vercel.app/" },
+    { id: 6, src: "/weather.png", title: "Weather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://pp-weather-azure.vercel.app/" },
+    { id: 7, src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
+    { id: 8, src: "/portfo.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" }
   ];
 
-  const handleToggle = () => setShowMore(prevState => !prevState);
+  const handleToggle = () => setShowMore((prevState) => !prevState);
 
-  const diplayItems = showMore ? items : items.slice(0, 3); // Updated to show 3 projects initially
+  const displayItems = showMore ? items : items.slice(0, 3); // Shows 3 projects initially
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-3 h-full py-20 z-[50] relative" id="projects"> {/* Increased z-index to 50 */}
+    <div className="relative z-20 mt-8 py-2 px-6 text-white rounded-lg transition-all duration-300 hover:shadow-lg cursor-pointer">
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-blue bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-blue bg-opacity-50 z-0"></div>
 
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 relative z-10">
-        My Projects
-      </h1>
+      <motion.h2 
+        className="relative z-20 text-2xl font-bold text-center mb-6"
+      >
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          My Projects
+        </span>
+      </motion.h2>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 transition-all duration-500 relative z-10">
-        {diplayItems.map((item) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 transition-all duration-500 relative z-20">
+        {displayItems.map((item) => (
           <ProjectCard
             key={item.id}
             src={item.src}
@@ -47,7 +51,7 @@ const Projects = () => {
       {/* Show More / Show Less Button */}
       <button
         onClick={handleToggle}
-        className="mt-8 py-2 px-6 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer relative z-10"
+        className="relative z-30 mt-8 py-2 px-6 bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white shadow-md font-medium rounded-lg duration-300 cursor-pointer mx-auto block"
       >
         {showMore ? "Show Less" : "Show More"}
       </button>
