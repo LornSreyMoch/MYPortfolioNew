@@ -11,7 +11,7 @@ const Projects = () => {
     { id: 1, src: "/bikay.png", title: "Short URL", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://link-shorten-two.vercel.app/api/short/91f6c83d" },
     { id: 2, src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
     { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://http://localhost:3000" },
-    { id: 4, src: "/buynow.png", title: "Buy Now", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
+    { id: 4, src: "/buynow.png", title: "Buy Now", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://buynow-pied.vercel.app/" },
     { id: 5, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://online-calculator-indol.vercel.app/" },
     { id: 6, src: "/weather.png", title: "Weather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://pp-weather-azure.vercel.app/" },
     { id: 7, src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },

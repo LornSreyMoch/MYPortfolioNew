@@ -7,7 +7,6 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-full px-6 relative">
-      {/* Title - Now Closer */}
       <motion.h2
         variants={slideInFromTop}
         initial="hidden"
@@ -41,12 +40,12 @@ const AboutMe = () => {
           className="text-gray-300 max-w-lg text-center md:text-left space-y-4"
         >
           <p className="text-lg leading-relaxed">
-            Hi, I'm <span className="text-purple-400 font-semibold">Lorn Sreymoch</span>, a **backend developer** from Phnom Penh, Cambodia.
-            I specialize in **Node.js, Express, PostgreSQL, and MongoDB**.
+            Hi, {"I'm"} <span className="text-purple-400 font-semibold">Lorn Sreymoch</span>, a backend developer from Phnom Penh, Cambodia.
+            I specialize in Node.js, Express, PostgreSQL, and MongoDB.
           </p>
           <p className="text-lg leading-relaxed">
-            I'm currently a **Year 2 Web and Mobile App Development student** at **SOB Margaret, PSE**,
-            and an **intern at Bikay Company**, where I work on building secure and scalable APIs.
+            {"I'm"} currently a Year 2 Web and Mobile App Development student at SOB Margaret, PSE,
+            and an intern at Bikay Company, where I work on building secure and scalable APIs.
           </p>
           <p className="text-lg leading-relaxed">
             I love problem-solving, learning new technologies, and improving my skills.
