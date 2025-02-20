@@ -101,7 +101,7 @@ const HeroContent = () => {
 
         <div className="flex justify-start gap-4 w-full mt-3">
         <Link
-         href="/"
+         href="/#contact"
          className="flex items-center justify-center px-6 py-2 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white shadow-md font-medium"
         >
          Contact

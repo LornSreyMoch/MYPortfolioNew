@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full px-6 relative">
+    <div className="flex flex-col items-center justify-center min-h-screen w-full px-6 py-20 text-white">
       <motion.h2
         variants={slideInFromTop}
         initial="hidden"
@@ -18,38 +18,48 @@ const AboutMe = () => {
         </span>
       </motion.h2>
 
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl gap-8">
-        {/* Left - Profile Image */}
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
+        {/* Profile Image */}
         <motion.div
-          initial="hidden"
-          animate="visible"
-          className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileHover={{ scale: 1.1 }}
+          className="relative w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-2xl border-4 border-purple-500"
         >
           <Image
-            src="/moch.jpg" // Replace with your actual image path
+            src="/hero-image.png"
             alt="Profile Picture"
             layout="fill"
             objectFit="cover"
           />
         </motion.div>
 
-        {/* Right - Description */}
+        {/* Description */}
         <motion.div
-          initial="hidden"
-          animate="visible"
-          className="text-gray-300 max-w-lg text-center md:text-left space-y-4"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-gray-300 max-w-2xl space-y-6 text-center md:text-left px-6"
         >
-          <p className="text-lg leading-relaxed">
-            Hi, {"I'm"} <span className="text-purple-400 font-semibold">Lorn Sreymoch</span>, a backend developer from Phnom Penh, Cambodia.
-            I specialize in Node.js, Express, PostgreSQL, and MongoDB.
+          <p className="text-lg md:text-2xl font-medium leading-relaxed">
+            Hi, {"I’m"} <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate backend developer from Phnom Penh, Cambodia.
+            I specialize in designing and developing <span className="text-purple-400">scalable</span> and <span className="text-purple-400">secure APIs</span>.
           </p>
-          <p className="text-lg leading-relaxed">
-            {"I'm"} currently a Year 2 Web and Mobile App Development student at SOB Margaret, PSE,
-            and an intern at Bikay Company, where I work on building secure and scalable APIs.
+          <p className="text-lg md:text-2xl font-medium leading-relaxed">
+            My expertise includes <span className="text-purple-400">HTML</span>, <span className="text-purple-400">CSS</span>,
+            <span className="text-purple-400">JavaScript</span>, <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>,
+            <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">Express.js</span>,
+            <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
           </p>
-          <p className="text-lg leading-relaxed">
-            I love problem-solving, learning new technologies, and improving my skills.
-            Outside of coding, I enjoy watching tech videos and funny content on YouTube.
+          <p className="text-lg md:text-2xl font-medium leading-relaxed">
+            I am currently in my second year of studying <span className="text-purple-400">Web and Mobile App Development</span> at PSE,
+            while interning at <span className="text-purple-400">Bikay Company</span> to gain real-world experience in backend development.
+          </p>
+          <p className="text-lg md:text-2xl font-medium leading-relaxed">
+            Beyond coding, I love <span className="text-purple-400">problem-solving</span>,
+            learning new technologies, and improving my skills. In my free time,
+            I enjoy watching <span className="text-purple-400">tech videos</span> and <span className="text-purple-400">fun content</span> on YouTube.
           </p>
         </motion.div>
       </div>
