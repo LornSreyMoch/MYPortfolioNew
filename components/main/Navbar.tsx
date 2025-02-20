@@ -32,7 +32,7 @@ const Navbar = () => {
         href="#hero"
         className="px-4 py-2 text-gray-200 text-lg md:text-xl hover:text-purple-400 transition-all duration-300"
       >
-        Hero
+        Home
       </Link>
     </li>
     <li>

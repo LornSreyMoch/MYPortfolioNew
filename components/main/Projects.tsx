@@ -8,11 +8,11 @@ const Projects = () => {
 
   // All project data
   const items = [
-    { id: 1, src: "/bikay.png", title: "Short URL", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://link-shorten-two.vercel.app/api/short/91f6c83d" },
-    { id: 2, src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
-    { id: 3, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://http://localhost:3000" },
+    { id: 1, src: "/portfo.png", title: "Portfolio Website", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://sreymoch.vercel.app/" },
+    { id: 2, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://online-calculator-indol.vercel.app/" },
+    { id: 3, src: "/bikay.png", title: "Short URL", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://link-shorten-two.vercel.app/api/short/91f6c83d" },
     { id: 4, src: "/buynow.png", title: "Buy Now", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://buynow-pied.vercel.app/" },
-    { id: 5, src: "/culator.png", title: "Calculator", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://online-calculator-indol.vercel.app/" },
+    { id: 5, src: "/pos.png", title: "Point of Sale", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
     { id: 6, src: "/weather.png", title: "Weather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://pp-weather-azure.vercel.app/" },
     { id: 7, src: "/portfo.png", title: "New Project 4", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" },
     { id: 8, src: "/portfo.png", title: "New Project 5", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", demoLink: "https://shorturl.demo" }
@@ -27,9 +27,7 @@ const Projects = () => {
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-blue bg-opacity-50 z-0"></div>
 
-      <motion.h2 
-        className="relative z-20 text-2xl font-bold text-center mb-6"
-      >
+      <motion.h2 className="relative z-20 text-4xl font-bold text-center mb-6">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           My Projects
         </span>
