@@ -53,6 +53,7 @@ const TextChange = () => {
   );
 };
 
+
 const HeroContent = () => {
   const [isDownloaded, setIsDownloaded] = useState(false);
 
