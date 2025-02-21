@@ -23,7 +23,6 @@ const Projects = () => {
     { id: 13, src: "/agroadmin.png", title: "AgroAdmin", description: "AgroAdmin a management system for agricultural businesses to track crops, sales, suppliers, and farm activities in one place." }
   ];
 
-
   const handleToggle = () => setShowMore((prevState) => !prevState);
 
   const displayItems = showMore ? items : items.slice(0, 3);
