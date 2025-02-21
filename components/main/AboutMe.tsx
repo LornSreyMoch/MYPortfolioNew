@@ -43,24 +43,18 @@ const AboutMe = () => {
           className="text-gray-300 max-w-2xl space-y-6 text-center md:text-left px-6"
         >
           <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            Hi, {"I’m"} <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate backend developer from Phnom Penh, Cambodia.
-            I specialize in designing and developing <span className="text-purple-400">scalable</span> and <span className="text-purple-400">secure APIs</span>.
+            Hello, I’m <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate full-stack developer based in Phnom Penh, Cambodia. With hands-on experience in building dynamic, scalable web applications, I specialize in technologies such as <span className="text-purple-400">HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, and Git</span>.
           </p>
           <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            My expertise includes <span className="text-purple-400">HTML</span>, <span className="text-purple-400">CSS</span>,
-            <span className="text-purple-400">JavaScript</span>, <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>,
-            <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">Express.js</span>,
-            <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
+            My expertise lies in crafting intuitive user interfaces, developing efficient backend systems, and ensuring seamless integration across the full stack. I have a deep understanding of <span className="text-purple-400">HTML</span>, <span className="text-purple-400">CSS</span>, <span className="text-purple-400">JavaScript</span>, <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>, <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">Express.js</span>, <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
           </p>
           <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            I am currently in my second year of studying <span className="text-purple-400">Web and Mobile App Development</span> at PSE,
-            while interning at <span className="text-purple-400">Bikay Company</span> to gain real-world experience in backend development.
+            Currently, I am pursuing my second year of studies in <span className="text-purple-400">Web and Mobile App Development</span> at PSE, while also gaining valuable real-world experience as a backend development intern at <span className="text-purple-400">Bikay Company</span>.
           </p>
           <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            Beyond coding, I love <span className="text-purple-400">problem-solving</span>,
-            learning new technologies, and improving my skills. In my free time,
-            I enjoy watching <span className="text-purple-400">tech videos</span> and <span className="text-purple-400">fun content</span> on YouTube.
+            Outside of coding, I am an avid <span className="text-purple-400">problem-solver</span> with a strong passion for learning new technologies and constantly enhancing my skill set. During my free time, I enjoy exploring <span className="text-purple-400">tech tutorials</span> and indulging in <span className="text-purple-400">entertaining content</span> on YouTube.
           </p>
+
         </motion.div>
       </div>
     </div>

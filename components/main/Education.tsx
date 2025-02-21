@@ -11,10 +11,10 @@ const fadeInUp = {
 
 const Education = () => {
     const educationData = [
-        { year: '2021', title: 'High School', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-        { year: '2022', title: 'University', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-        { year: '2023', title: 'Internship', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-    ];
+        { year: '2022', title: 'Grade 9', description: 'Graduated from Prek Antes Secondary School.' },
+        { year: '2023', title: 'Foundation Studies Division', description: 'Completed studies at PSE-Institute (Pour un Sourire d’Enfant).' },
+        { year: '2024', title: 'Year 2 - Web & Mobile App Development', description: 'Currently studying at SOB Margaret, PSE-Institute.' }
+    ];    
 
     return (
         <div className="flex flex-col items-center text-white py-16 px-6">

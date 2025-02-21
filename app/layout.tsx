@@ -9,7 +9,7 @@ import Contact from "@/components/main/Contact";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
+  title: "MOCH Portfolio",
   description: "This is my portfolio",
 };
 
