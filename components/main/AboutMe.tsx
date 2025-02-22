@@ -46,13 +46,13 @@ const AboutMe = () => {
            {"I'm"} <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate full-stack developer based in Phnom Penh, Cambodia. I specialize in building scalable web applications using technologies like <span className="text-purple-400">HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, and Git</span>.
           </p>
           <p className="text-lg md:text-xl font-medium leading-relaxed">
-            My expertise includes designing user interfaces, developing backend systems, and ensuring smooth full-stack integration. I’m skilled in <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>, <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
+            My expertise includes designing user interfaces, developing backend systems, and ensuring smooth full-stack integration. {"I'm"} skilled in <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>, <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
           </p>
           <p className="text-lg md:text-xl font-medium leading-relaxed">
             Currently, {"I'm"} in my second year studying <span className="text-purple-400">Web and Mobile App Development</span> at PSE, while also gaining hands-on experience as a backend development intern at <span className="text-purple-400">Bikay Company</span>.
           </p>
           <p className="text-lg md:text-xl font-medium leading-relaxed">
-            When I'm not coding, I enjoy <span className="text-purple-400">playing football</span>, exploring <span className="text-purple-400">tech tutorials</span>, and watching <span className="text-purple-400">entertaining content</span> on YouTube.
+            When {"I'm"} not coding, I enjoy <span className="text-purple-400">playing football</span>, exploring <span className="text-purple-400">tech tutorials</span>, and watching <span className="text-purple-400">entertaining content</span> on YouTube.
           </p>
         </motion.div>
       </div>
