@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full px-6 py-20 text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen w-full px-6 py-20 text-white bg-gradient-to-b to-gray-800">
       <motion.h2
         variants={slideInFromTop}
         initial="hidden"
         animate="visible"
-        className="text-4xl font-semibold text-gray-200 text-center mb-6"
+        className="text-3xl font-semibold text-gray-200 text-center mb-8"
       >
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           About Me
@@ -42,19 +42,18 @@ const AboutMe = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="text-gray-300 max-w-2xl space-y-6 text-center md:text-left px-6"
         >
-          <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            Hello, I’m <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate full-stack developer based in Phnom Penh, Cambodia. With hands-on experience in building dynamic, scalable web applications, I specialize in technologies such as <span className="text-purple-400">HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, and Git</span>.
+          <p className="text-lg md:text-xl font-medium leading-relaxed">
+           {"I’m"} <span className="text-purple-400 font-bold">Lorn Sreymoch</span>, a passionate full-stack developer based in Phnom Penh, Cambodia. I specialize in building scalable web applications using technologies like <span className="text-purple-400">HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, and Git</span>.
           </p>
-          <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            My expertise lies in crafting intuitive user interfaces, developing efficient backend systems, and ensuring seamless integration across the full stack. I have a deep understanding of <span className="text-purple-400">HTML</span>, <span className="text-purple-400">CSS</span>, <span className="text-purple-400">JavaScript</span>, <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>, <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">Express.js</span>, <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
+          <p className="text-lg md:text-xl font-medium leading-relaxed">
+            My expertise includes designing user interfaces, developing backend systems, and ensuring smooth full-stack integration. I’m skilled in <span className="text-purple-400">React.js</span>, <span className="text-purple-400">Next.js</span>, <span className="text-purple-400">Node.js</span>, <span className="text-purple-400">MySQL</span>, and <span className="text-purple-400">PostgreSQL</span>.
           </p>
-          <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            Currently, I am pursuing my second year of studies in <span className="text-purple-400">Web and Mobile App Development</span> at PSE, while also gaining valuable real-world experience as a backend development intern at <span className="text-purple-400">Bikay Company</span>.
+          <p className="text-lg md:text-xl font-medium leading-relaxed">
+            Currently, {"I’m"} in my second year studying <span className="text-purple-400">Web and Mobile App Development</span> at PSE, while also gaining hands-on experience as a backend development intern at <span className="text-purple-400">Bikay Company</span>.
           </p>
-          <p className="text-lg md:text-2xl font-medium leading-relaxed">
-            Outside of coding, I am an avid <span className="text-purple-400">problem-solver</span> with a strong passion for learning new technologies and constantly enhancing my skill set. During my free time, I enjoy exploring <span className="text-purple-400">tech tutorials</span> and indulging in <span className="text-purple-400">entertaining content</span> on YouTube.
+          <p className="text-lg md:text-xl font-medium leading-relaxed">
+            When I'm not coding, I enjoy <span className="text-purple-400">playing football</span>, exploring <span className="text-purple-400">tech tutorials</span>, and watching <span className="text-purple-400">entertaining content</span> on YouTube.
           </p>
-
         </motion.div>
       </div>
     </div>
