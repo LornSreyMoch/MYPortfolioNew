@@ -9,6 +9,10 @@ import { HiMenu, HiX } from "react-icons/hi";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="w-full h-[80px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-6">
       <div className="w-full h-full flex items-center justify-between px-6">
@@ -80,15 +84,14 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden flex flex-col items-center bg-[#0300145e] absolute top-[80px] w-full transition-all duration-300 ${
-          menuOpen ? "block" : "hidden"
-        }`}
+        className={`md:hidden flex flex-col items-center bg-[#030014] w-full absolute top-[80px] left-0 shadow-md transition-all duration-300 ${menuOpen ? "block" : "hidden"}`}
       >
         <ul className="w-full flex flex-col items-center gap-[20px] py-4">
           <li>
             <Link
               href="#home"
-              className="px-4 py-2 text-gray-200 text-lg md:text-xl hover:text-purple-400 transition-all duration-300"
+              onClick={handleMenuClose} // Close menu when Home is clicked
+              className="px-4 py-2 text-gray-200 text-lg hover:text-purple-400 transition-all duration-300"
             >
               Home
             </Link>
@@ -96,7 +99,8 @@ const Navbar = () => {
           <li>
             <Link
               href="#about"
-              className="px-4 py-2 text-gray-200 text-lg md:text-xl hover:text-purple-400 transition-all duration-300"
+              onClick={handleMenuClose} // Close menu when About Me is clicked
+              className="px-4 py-2 text-gray-200 text-lg hover:text-purple-400 transition-all duration-300"
             >
               About Me
             </Link>
@@ -104,7 +108,8 @@ const Navbar = () => {
           <li>
             <Link
               href="#skills"
-              className="px-4 py-2 text-gray-200 text-lg md:text-xl hover:text-purple-400 transition-all duration-300"
+              onClick={handleMenuClose} // Close menu when Skills is clicked
+              className="px-4 py-2 text-gray-200 text-lg hover:text-purple-400 transition-all duration-300"
             >
               Skills
             </Link>
@@ -112,7 +117,8 @@ const Navbar = () => {
           <li>
             <Link
               href="#projects"
-              className="px-4 py-2 text-gray-200 text-lg md:text-xl hover:text-purple-400 transition-all duration-300"
+              onClick={handleMenuClose} // Close menu when Projects is clicked
+              className="px-4 py-2 text-gray-200 text-lg hover:text-purple-400 transition-all duration-300"
             >
               Projects
             </Link>
