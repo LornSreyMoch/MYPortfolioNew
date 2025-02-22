@@ -88,7 +88,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-300 my-5 max-w-[700px] sm:text-xl"
         >
-          I’m a Full Stack Developer with experience in Website, Mobile, and Software development. Let’s connect and explore my projects and skills.
+          {"I’m"} a Full Stack Developer with experience in Website, Mobile, and Software development. {"Let’s"} connect and explore my projects and skills.
         </motion.p>
 
         <div className="flex flex-col sm:flex-row justify-start gap-6 w-full mt-5">
