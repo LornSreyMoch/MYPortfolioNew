@@ -34,7 +34,7 @@ const AchievementsSection = () => {
             {
               mass: 1,
               friction: 100,
-              tension: 140 * (index + 1), // Dynamically adjust tension based on index
+              tension: 140 * (index + 1),
             },
           ];
 

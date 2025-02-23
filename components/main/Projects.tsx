@@ -61,7 +61,7 @@ const Projects = () => {
       {/* Show More / Show Less Button */}
       <button
         onClick={handleToggle}
-        className="relative z-30 mt-8 py-2 px-6 bg-gradient-to-br from-blue-500 to-purple-600 hover:from-purple-500 hover:to-blue-600 transition-all text-white shadow-md font-medium rounded-lg duration-300 cursor-pointer mx-auto block"
+        className="relative z-30 mt-8 py-2 px-6 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:bg-gradient-to-l hover:from-purple-600 hover:to-blue-500 transition-all duration-300 text-white shadow-xl font-medium transform hover:scale-105 active:scale-95 cursor-pointer mx-auto block"
       >
         {showMore ? "Show Less" : "Show More"}
       </button>
