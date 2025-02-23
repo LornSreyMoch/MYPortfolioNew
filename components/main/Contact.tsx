@@ -7,12 +7,13 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full py-16 px-6 text-white">
       <div className="max-w-4xl mx-auto text-center">
+
         {/* Title with animation */}
         <motion.h2
           variants={slideInFromTop}
           initial="hidden"
           animate="visible"
-          className="text-4xl font-semibold text-gray-200 text-center mb-6"
+          className="text-4xl font-semibold text-gray-200 mb-6"
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             Contact Me
@@ -35,9 +36,12 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <FaPhoneAlt className="text-purple-600" size={32} />
-            <span className="text-gray-300 hover:text-purple-500 transition-all duration-300">
-              <a href="tel:+88570857113">+885 70 857 113</a>
-            </span>
+            <a
+              href="tel:+88570857113"
+              className="text-gray-300 hover:text-purple-500 transition duration-300"
+            >
+              +885 70 857 113
+            </a>
           </motion.div>
 
           {/* Email */}
@@ -48,9 +52,12 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <FaEnvelope className="text-purple-600" size={32} />
-            <span className="text-gray-300 hover:text-purple-500 transition-all duration-300">
-              <a href="mailto:lornsreymoch5@gmail.com">lornsreymoch5@gmail.com</a>
-            </span>
+            <a
+              href="mailto:lornsreymoch5@gmail.com"
+              className="text-gray-300 hover:text-purple-500 transition duration-300"
+            >
+              lornsreymoch5@gmail.com
+            </a>
           </motion.div>
 
           {/* LinkedIn */}
@@ -61,15 +68,14 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <FaLinkedin className="text-purple-600" size={32} />
-            <span className="text-gray-300 hover:text-purple-500 transition-all duration-300">
-              <a
-                href="https://www.linkedin.com/in/sreymoch-lorn-793538352/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/sreymoch-lorn
-              </a>
-            </span>
+            <a
+              href="https://www.linkedin.com/in/sreymoch-lorn-793538352/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-purple-500 transition duration-300"
+            >
+              linkedin.com/in/sreymoch-lorn
+            </a>
           </motion.div>
 
         </div>
