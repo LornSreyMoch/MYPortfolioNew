@@ -103,7 +103,7 @@ const HeroContent = () => {
           </Link>
 
           <a
-            href="/LORN Sreymoch C3-WMAD CV 2025.Docx.pdf"
+            href="/Lorn Sreymoch C3-WMAD CV 2025.pdf"
             download
             onClick={handleDownloadClick}
             className={`flex items-center justify-center px-8 py-3 w-full sm:w-fit rounded-full text-white shadow-xl font-medium transform hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out
